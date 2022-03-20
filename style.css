@@ -1,0 +1,101 @@
+:root {
+    /* Colors */
+    --primary: rgb(75, 44, 189);
+    --secondary: rgb(41, 27, 92);
+    --light: #fff9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-title {
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.card {
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    margin-bottom: 1.3em;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #fff3;
+}
+
+.card .display {
+    font-weight: 600;
+    padding: 0em;
+    margin: 0.7em 0;
+    border-radius: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9e9e9;
+    color: #666;
+}
+
+.card .display .copykey {
+    padding: 0.7em;
+    border-radius: 0 .5em .5em 0;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+.card .display .new-password {
+    padding: 0.7em;
+}
+
+.settings {
+    margin: 1em 0;
+}
+
+.settings .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 0;
+    margin: 0.3em 0;
+}
+
+.settings input {
+    max-width: 20%;
+    padding: 0.2em;
+}
+
+.settings input:focus {
+    border: none;
+}
+
+.generate {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 0.6em auto;
+    border-radius: .5em;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
